@@ -1,0 +1,99 @@
+1. Newton Second Law
+
+Bunyi hukum II Newton adalah:
+
+Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan berbanding terbalik dengan massa benda. Arah percepatan benda sama dengan arah gaya total yang diberikan pada benda.
+Secara matematis hukum II Newton dirumuskan sebagai berikut: SF = m x a
+
+SF = resultan gaya (Newton)
+
+m = massa benda (kg)
+
+a = percepatan benda (m/s2)
+
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+>> ALGORITMA:
+Simpan massa dengan 600
+
+
+
+>> PSUEDOCODE:
+
+STORE "massa" with 600
+STORE "percepatan" with 2
+STORE "gaya" without any value
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+DISPLAY "gaya"
+
+
+--------------------------------------
+2. Tahun Kabisat
+
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+
+>> Answer:
+
+STORE "tahun" with any value
+STORE "tahunkabisat" without any value
+IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals
+  DISPLAY 'Ini merupakan tahun kabisat'
+ELSE IF "tahun" mod 4 equals 0 AND "tahun" mod 100 equals 0 AND "tahun" mod 400 equals 0
+  DISPLAY 'Ini merupakan tahun kabisat'
+ELSE
+  DISPLAY 'Ini bukan tahun kabisat'
+
+--------------------------------------
+3. Laundry Day
+
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+
+
+>> Answer:
+
+STORE "jumlahPakaian" with 20
+STORE "jumlahDimasukan" with 0
+
+WHILE "jumlahPakaian" greater than "jumlahDimasukan"
+  ADD "jumlahDimasukan" by 1
+  DISPLAY 'Jumlah pakaian yang dimasukan ke dalam mesin cuci adalah "jumlahPakaian"'
+END WHILE
+
+DISPLAY 'Silahkan nyalakan mesin cuci'
+
+--------------------------------------
+4. Periksa Kuku
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+
+Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+
+>> Answer:
+
+STORE "jumlah" with 0
+STORE "kuku" with any bolean
+
+WHILE "jumlah" less than 40 
+  IF "kuku" EQUALS 0
+    DISPLAY 'Kuku pendek'
+    DO 'Guru Memuji Siswa/Siswi'
+  ELSE
+    DISPLAY 'Kuku panjan'
+    DO 'Guru menghukum Siswa/Siswi'
+END WHILE
+--------------------------------------
+  
+ADD "jumlah" by 1
+   
+

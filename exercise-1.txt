@@ -14,12 +14,15 @@ a = percepatan benda (m/s2)
 Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
 
 >> ALGORITMA:
-Simpan massa dengan 600
-
-
+Mulai
+Deklarasikan massa sebanyak 600
+Deklarasikan percepatan sebanyak 2
+Deklarasikan gaya
+Hitung gaya = massa * percepatan
+Tampilkan gaya
+Selesai
 
 >> PSUEDOCODE:
-
 STORE "massa" with 600
 STORE "percepatan" with 2
 STORE "gaya" without any value
@@ -39,17 +42,29 @@ Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
 Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
 Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
 
+>> ALGORITMA:
+Mulai
+Masukan tahun
+Deklarasikan tahunkabisat
+Jika tahun dibagi 4 sisah 0 dan tahun dibagi 100 tidak sisah 0
+Maka, Tampilkan 'Ini merupakan tahun kabisat'
+Atau Jika tahun dibagi 4 sisah 0 fan tahun dibagi 100 sisah 0 dan tahun dibagi 400 sisah 0
+Maka, Tampilkan 'Ini merupakan tahun kabisat'
+Jika tidak
+Maka, Tampilkan 'Ini bukan tahun kabisat'
+Selesai
 
->> Answer:
 
+>> PSUEDOCODE:
 STORE "tahun" with any value
 STORE "tahunkabisat" without any value
-IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals
+IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals 0
   DISPLAY 'Ini merupakan tahun kabisat'
 ELSE IF "tahun" mod 4 equals 0 AND "tahun" mod 100 equals 0 AND "tahun" mod 400 equals 0
   DISPLAY 'Ini merupakan tahun kabisat'
 ELSE
   DISPLAY 'Ini bukan tahun kabisat'
+END IF
 
 --------------------------------------
 3. Laundry Day
@@ -58,9 +73,19 @@ Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci o
 
 Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
 
+>> ALGORITMA:
+Mulai
+Deklarasikan jumlah pakaian dengan 20
+Deklarasikan jumlah dimasukan dengan 0
 
->> Answer:
+Lakukan jika jumlah pakaian lebih besar dari jumlah dimasukan
+  Tambahkan satu jumlah dimasukan
+  Tampilkan 'Jumlah pakaian yang dimasukan ke dalam mesin cuci adalah jumlah pakaian'
+Stop perulangan
+Tampilkan nyalakan mesin cuci
+Selesai
 
+>> PSUEDOCODE:
 STORE "jumlahPakaian" with 20
 STORE "jumlahDimasukan" with 0
 
@@ -69,7 +94,7 @@ WHILE "jumlahPakaian" greater than "jumlahDimasukan"
   DISPLAY 'Jumlah pakaian yang dimasukan ke dalam mesin cuci adalah "jumlahPakaian"'
 END WHILE
 
-DISPLAY 'Silahkan nyalakan mesin cuci'
+DISPLAY 'nyalakan mesin cuci'
 
 --------------------------------------
 4. Periksa Kuku
@@ -78,22 +103,39 @@ Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan ca
 
 Buatlah algoritma & pseudocode untuk permasalahan diatas.
 
+>> ALGORITMA:
+Mulai
+Deklarasikan jumlah dengan 0
+Deklarasikan kuku dengan tipe bilangan boolean
 
->> Answer:
+Lakukan jika Jumlah kurang dari 40
+  Jika kuku sama dengan 0
+    Maka, Tampilkan kuku pendek, Tampilkan Guru memuji Siswa/Siswi
+  Jika tidak
+    Maka, Tampilkan kuku panjang, Tampilkan Guru menghukum Siswa/Siswi
+  Persyaratan Selesai
+  Tambahkan jumlah dengan 1
+Stop perulangan
+
+Selesai
+    
+
+>> PSUEDOCODE:
 
 STORE "jumlah" with 0
-STORE "kuku" with any bolean
+STORE "kuku" with any boolean
 
 WHILE "jumlah" less than 40 
   IF "kuku" EQUALS 0
     DISPLAY 'Kuku pendek'
-    DO 'Guru Memuji Siswa/Siswi'
+    DISPLAY 'Guru Memuji Siswa/Siswi'
   ELSE
-    DISPLAY 'Kuku panjan'
-    DO 'Guru menghukum Siswa/Siswi'
+    DISPLAY 'Kuku panjang'
+    DISPLAY 'Guru menghukum Siswa/Siswi'
+  END IF
+  ADD "jumlah" by 1
 END WHILE
 --------------------------------------
-  
-ADD "jumlah" by 1
+
    
 
